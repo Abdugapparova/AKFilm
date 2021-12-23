@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color: #1B1B1B;">
+        <style>
+            td{
+                color: white;
+            }
+            p{
+                display: inline;
+                color: wheat;
+                margin-left: 1%;
+            }
+        </style>
+<table class="container">
+    <tr>
+       <p>Фильмы:</p><br>
+       <p>ID</p> <p>Название</p><p style="margin-left: 7%;">Дата выхода</p><p>рейтинг</p> <p>цена</p><p>жанр</p>
+       <td> <br>{% for movie in Movies %} </td>
+      <td> {{ movie.movie_id }} </td>
+      <td>  {{ movie.movie_name }} </td>
+      <td>   {{ movie.year }} </td>
+      <td>  {{ movie.rating }} </td>
+      <td >   {{ movie.price }} </td>
+      <td >   {{ movie.genre_name }} </td>
+    </tr>
+    <tr> 
+        <td>   {{ movie.transtype_id}} </td>
+        {% endfor %} 
+      </tr>
+</table>
+    <a href="listM/" style=" color: teal; padding: 2%; margin-top: 5%;">Update Movies information</a>
+</body>
+</html>

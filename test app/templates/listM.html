@@ -1,0 +1,38 @@
+<body style="background-color: #1B1B1B;">
+        <style>
+        
+    h1{
+        text-align: center;
+        color: white;
+    }
+            
+            p{
+                display: inline;
+                color: wheat;
+                margin-left: 1%;
+            }
+            h2{
+        font-size: 13px;
+        color: white;
+        text-align: center;
+    }
+    a{
+        color: wheat;
+        text-decoration: none;
+    }
+    
+        </style>
+ <head>
+    <title>Update Movies</title>
+    
+</head>
+<div class="container">
+    <h1 style="padding-bottom: 30px">List of Movies</h1>
+       {% for movie in movies_list %} 
+        <h2>{{ movie.movie_id }} {{ movie.movie_name }} 
+            <a href="{% url 'updateM' movie.movie_id %}">Update</a></h2>
+      
+        {% endfor %} 
+      
+    </div>
+</body>

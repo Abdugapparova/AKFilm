@@ -1,0 +1,19 @@
+<div class="container" style="background-color: #1B1B1B;">
+<form method="POST">
+    {% csrf_token %}
+    <h1 style="color: blanchedalmond; font-size: 32px;text-align: center;">Are you sure you want to log out of your account?</h1>
+    <style>
+        input[type="submit"]:hover{
+            background-color: blue;
+            color: white;
+        }
+        input[type="submit"]{
+            padding: 2%;
+            width: 18%;
+        }
+    </style>
+    <input type="submit" value="Yes" style="margin-left: 25%; margin-right: 15%; margin-top: 2%;"/>
+    <input type="submit" value="Cancel" href="/"/>
+</form>
+<br><br>
+</div>
