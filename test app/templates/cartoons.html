@@ -1,0 +1,46 @@
+{% extends "header_footer.html" %}
+{%load static%}
+{% block title %} Cartoons{% endblock %}
+{% block content %}
+        <div class="container" style="color:white; ">
+            <div class="row">
+                <style>
+                    figcaption{
+                        font-size: 16px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: gray;
+                    }
+                    a:hover{
+                       color: white; 
+                    }
+                </style>
+            <p style="font-size: 20px;">Мультфильмы</p>
+            <figure class="col-lg-2 col-sm-3">
+                <img src="{%static 'images/m1.jpg' %}" height="200px"/>
+                <figcaption>Вперед</figcaption>
+            </figure>
+            <figure class="col-lg-2 col-sm-3">
+                <img src="{%static 'images/m2.jpg' %}" height="200px"/>
+                <figcaption>Камуфляж и шпионаж</figcaption>
+            </figure>
+            <figure class="col-lg-2 col-sm-3">
+                <img src="{%static 'images/m3.jpg' %}" height="200px"/>
+                <figcaption>Красные туфельки</figcaption>
+            </figure>
+            <figure class="col-lg-2 col-sm-3">
+                <img src="{%static 'images/m4.jpg' %}" height="200px"/>
+                <figcaption> Следующее поколение</figcaption>
+            </figure>
+            <figure class="col-lg-2 col-sm-3">
+                <img src="{%static 'images/m5.jpg' %}" height="200px"/>
+                <figcaption>Эверест</figcaption>
+            </figure>
+            <figure class="col-lg-2 col-sm-3">
+                <img src="{%static 'images/a1.jpg' %}" height="200px"/>
+                <figcaption><a href="video/">Город героев</a></figcaption>
+            </figure>
+          </div>
+        </div>
+{%endblock%}
