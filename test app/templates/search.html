@@ -1,0 +1,32 @@
+<body style="background-color: #1B1B1B;">
+    <style>
+        form{
+        text-align: center;
+        color: white;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    input[type="submit"] {
+         background:white;
+        color: black;
+        padding: 1%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    input[type="submit"]:hover {
+       background:blue;
+        color: white;
+    }
+    </style>
+    <div class="container">
+        <h1 style="padding-bottom: 30px">List of Movies</h1>
+           {% for movie in movies_list)%} 
+            <h2>{{ movie.movie_id }} {{ movie.movie_name }} 
+                <a href="{% url 'results' movie.movie_name %}">Update</a></h2>
+          
+            {% endfor %} 
+          
+        </div>
+</body>

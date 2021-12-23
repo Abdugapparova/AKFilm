@@ -1,0 +1,116 @@
+{% extends "header_footer.html" %}
+{%load static%}
+{% block content %}
+<style type="text/css">
+body{
+  background-color:#1B1B1B;
+}
+.form-row{
+  margin-bottom:0.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow:hidden;
+  color:white;
+  text-align: center;
+}
+.form-row input{
+  float:right;
+  height:19px;
+  line-height:19px;
+  width:287px;
+  border: 1px solid #483e8a;
+}
+.reg-form{
+  width:416px;
+  margin: 0px auto;
+}
+h1{
+  text-align:center;
+  color:white;
+}
+.form-row textarea{
+  height:20%;
+  line-height:16px;
+  font-size:20px;
+  padding:0px 5px;
+  width:484px;
+  border:1px solid #483e8a;
+}
+    form{
+        text-align: center;
+        color: white;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    input[type="submit"] {
+         background:white;
+        color: black;
+        padding: 1%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    input[type="submit"]:hover {
+       background:#2E477B;
+        color: white;
+    }
+    </style>
+<form class="container" method="post" enctype="multipart/form-data">
+  <a style="background-color: #363535; text-align: center; width: 50%; margin-left: 25%; margin-right: 15%;" href="logout/" >Log out</a>
+  <h1>Регистрация</h1>
+  {% csrf_token %}
+{{ form.as_p }}
+
+<!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input
+      class="form-check-input me-2"
+      type="checkbox"
+      value=""
+      id="form2Example33"
+      checked
+    />
+    
+    <label class="form-check-label" for="form2Example33">
+      Запомнить меня
+    </label>
+  </div>
+
+  <!-- Submit button -->
+  
+  <button type="submit" class="btn btn-primary btn-block mb-4"><a href="/" style="text-decoration: none; color: white;">Зарегистрироваться</a></button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p>или зарегистрируйтесь с помощью:</p>
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+      <a href="http://www.facebook.com"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/></a>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-google"></i>
+      <a href="http://www.google.com"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/google-logo--v1.png"/></a>
+
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+      <a href="http://www.twitter.com"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></a>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-floating mx-1">
+      <i class="fab fa-github"></i>
+      <a href="http://www.github.com"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"/></a>
+    </button>
+</div>
+</form>
+<br><br>
+{% endblock %}
+
+<!-- <script style="background-color: teal;
+color: white;">
+   $("#Form").on('submit', function(event) {
+      alert("Succesfully submitted!")});
+</script> -->

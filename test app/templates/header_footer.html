@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+        <title>AKFilm_Contacts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{%static 'css/Lab2_css.css' %}" rel="stylesheet" type="text/css"/> 
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	</head>
+	
+	<body class="container">
+		<nav class="one">
+        <ul class = "container topmenu" style="background-color: #363535;">
+		<style type="text/css">
+			body{background-color:#1B1B1B;}
+            a{text-decoration: none;} 
+            li{display: inline;}
+            nav {opacity: 0.9;}
+            ul {
+                list-style: none; 
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            .submenu{
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                border-radius: 6px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+                width: 140% !important;
+            }
+            nav {opacity: 0.9;
+                margin-bottom: 3%;} 
+            .carousel-item{
+                position: relative;
+                z-index: -1;
+            }
+            .one{
+                background-color: #363535;
+            }
+            #title{
+                background-color: white
+            }
+        </style>
+          <li id="title"><a href="Lab2.html" style="color: black;">AKFilm</a></li>
+          <li><a href="movies/">Фильмы<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+                <li><a href="">Боевики</a></li>
+                <li><a href="voenniyeFilmi/">Военные</a></li>
+                <li><a href="">Детективы</a></li>
+                <li><a href="">Для всей семьи</a></li>
+                <li><a href="">Катастрофы</a></li>
+                <li><a href="">Для детей</a></li>
+                <li><a href="">Документальные</a></li>
+                <li><a href="">Драмы</a></li>
+                <li><a href="">Исторические</a></li>
+                <li><a href="">Комедии</a> </li>
+                <li><a href="">Криминальные</a></li>
+                <li><a href="">Мелодрамы</a></li>
+                <li><a href="">Приключения</a></li>
+                <li><a href="">Ужасы</a></li>
+                <li><a href="">Фантастика</a></li>
+            </ul>
+          </li>
+          <li><a href="cartoons/">Мультфильмы<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+                <li><a href="">Советские</a></li>
+                <li><a href="">Аниме</a></li>
+                <li><a href="">Для взрослых</a></li>
+                <li><a href="">Для детей</a></li>
+                <li><a href="">Для всей семьи</a></li>
+                <li><a href="">Полнометражные</a></li>
+                <li><a href="">Приключения</a></li>
+                <li><a href="">Развивающие</a></li>
+                <li><a href="">Сериалы</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">Сериалы<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi"> 
+                <li><a href="">Боевики</a></li>
+                <li><a href="">Военные</a></li>
+                <li><a href="">Детективы</a></li>
+                <li><a href="">Драмы</a></li>
+                <li><a href="">Исторические</a></li>
+                <li><a href="">Комедийные</a></li>
+                <li><a href="">Криминальные</a></li>
+                <li><a href="">Мелодрамы</a></li>
+                <li><a href="">Приключения</a></li>
+                <li><a href="">Медицинские</a></li>
+                <li><a href="">Романтические</a></li>
+                <li><a href="">Триллеры</a></li>
+                <li><a href="">Дорамы</a></li>
+                <li><a href="">Фантастические</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">Телеканалы</a></li>
+
+          <li ><a href="">Подборки<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+                <li><a href="">Захватывающие</a></li>
+                <li><a href="">Страстные</a></li>
+                <li><a href="">Про подростков</a></li>
+                <li><a href="">На реальных событиях</a></li>
+                <li><a href="">Про любовь</a></li>
+                <li><a href="">Самые страшные</a></li>
+                <li><a href="">Семейные комедии</a></li>
+                <li><a href="">Молодежные комедии</a></li>
+                <li><a href="">Про космос</a></li>
+                <li><a href="">Про зомби</a></li>
+            </ul>
+          </li>
+          <li id="ru" ><a href="#">RU<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+              <li id="en"><a href="Lab2.html">EN</a></li>
+            </ul>
+          </li> 
+          <li id="lupa"><img src="https://img.icons8.com/material-outlined/24/ffffff/search.png"/></li>
+          <li><a class="search" href="regis.html"><img src="https://img.icons8.com/material-outlined/24/ffffff/user-male-circle.png"/></a></li>
+        </ul>
+      </nav> 
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+<!-----------------------  Footer -------------------------------->
+ <div class="container-fluid" id="footer" style="text-align: center; background-color: #363535;">
+    <ul class="social-icons" style="background-color: #363535;">
+        <div style="font-size: 18px; font-family:Arial; background-color: #363535;">Присоединяйтесь</div>
+
+        <li><a href="http://www.facebook.com"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-circled--v1.png"/></a></li>
+        <li><a href="http://www.twitter.com"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/></a></li>
+        <li><a href="http://www.youtube.com"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube.png"/></a></li>
+        <li><a href="http://www.instagram.com"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-circle.png"/></a></li>
+    </ul>
+    <hr style="color:white;">
+    <div style=" color:white; font-size: 18px; font-family:Arial;">Контакты:
+        <a href="" style="color:white;">+7-747-943-20-28</a>
+        <a href="" style="color:white;">+7-702-845-62-32</a>
+    </div>
+    <hr style="color:white;">
+    <div style="font-size: 18px; font-family: Arial;">
+        <a href="mailto:kamosh20021108@gmail.com" style="color:white;"><div>Задавайте вопросы по электронной почте</div></a>
+    </div>
+</div> 
+  </body>
+</html>

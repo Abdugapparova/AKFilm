@@ -1,0 +1,610 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AKFILM</title>
+        <script href="{%static 'js/lab2.js' %}" type="javascript"></script>
+        <link href="{% static 'css/Lab2_css.css' %}" rel="stylesheet" type="text/css"/> 
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+        <!-------------------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        </head>
+
+    <body class="container" style="background-color:#1B1B1B;">
+      <nav class="one">
+        <ul class = "container topmenu" style="background-color: #363535;">
+        <style type="text/css">
+            a{text-decoration: none;} 
+            li{display: inline;}
+            nav {opacity: 0.9;}
+            ul {
+                list-style: none; 
+                margin: 0;
+                padding: 0;
+            }
+            .submenu{
+                /* z-index: 1; */
+                position: absolute;
+                top: 100%;
+                border-radius: 6px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+                width: 140% !important;
+                text-align: center;
+            }
+            nav {opacity: 0.9;} 
+            ul {
+                list-style: none; 
+                margin: 0;
+                padding: 0%;
+                text-align: center;
+            } 
+            .carousel-item{
+                position: relative; 
+                z-index: -1; 
+                width: 100%;
+            }
+            .one{
+                background-color: #363535;
+            }
+            #title{background-color: white;}
+        </style>
+
+          <li id="title" style="background-color: white;"><a href="" style="color: black;">AKFilm</a></li>
+          <li><a href="movies/">Фильмы<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+                <li><a href="">Боевики</a></li>
+                <li><a href="voenniyeFilmi/">Военные</a></li>
+                <li><a href="">Детективы</a></li>
+                <li><a href="">Для всей семьи</a></li>
+                <li><a href="">Катастрофы</a></li>
+                <li><a href="">Для детей</a></li>
+                <li><a href="">Документальные</a></li>
+                <li><a href="">Драмы</a></li>
+                <li><a href="">Исторические</a></li>
+                <li><a href="">Комедии</a> </li>
+                <li><a href="">Криминальные</a></li>
+                <li><a href="">Мелодрамы</a></li>
+                <li><a href="">Приключения</a></li>
+                <li><a href="">Ужасы</a></li>
+                <li><a href="">Фантастика</a></li>
+            </ul>
+          </li>
+          <li><a href="cartoons/">Мультфильмы<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+                <li><a href="">Советские</a></li>
+                <li><a href="">Аниме</a></li>
+                <li><a href="">Для взрослых</a></li>
+                <li><a href="">Для детей</a></li>
+                <li><a href="">Для всей семьи</a></li>
+                <li><a href="">Полнометражные</a></li>
+                <li><a href="">Приключения</a></li>
+                <li><a href="">Развивающие</a></li>
+                <li><a href="">Сериалы</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">Сериалы<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi"> 
+                <li><a href="">Боевики</a></li>
+                <li><a href="">Военные</a></li>
+                <li><a href="">Детективы</a></li>
+                <li><a href="">Драмы</a></li>
+                <li><a href="">Исторические</a></li>
+                <li><a href="">Комедийные</a></li>
+                <li><a href="">Криминальные</a></li>
+                <li><a href="">Мелодрамы</a></li>
+                <li><a href="">Приключения</a></li>
+                <li><a href="">Медицинские</a></li>
+                <li><a href="">Романтические</a></li>
+                <li><a href="">Триллеры</a></li>
+                <li><a href="">Дорамы</a></li>
+                <li><a href="">Фантастические</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">Телеканалы</a></li>
+
+          <li><a href="">Подборки<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu" id="filmi">
+                <li><a href="">Захватывающие</a></li>
+                <li><a href="">Страстные</a></li>
+                <li><a href="">Про подростков</a></li>
+                <li><a href="">На реальных событиях</a></li>
+                <li><a href="">Про любовь</a></li>
+                <li><a href="">Самые страшные</a></li>
+                <li><a href="">Семейные комедии</a></li>
+                <li><a href="">Молодежные комедии</a></li>
+                <li><a href="">Про космос</a></li>
+                <li><a href="">Про зомби</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <style type="text/css">
+        .search{
+            display: inline;
+            text-align: right;
+        }
+        
+        .seearch{
+            background-color: #363535;
+            text-align: center;
+            margin-bottom: 1%;
+        }
+            
+    </style>
+<!--------------------- Modal bootstrap --------------------------->
+        <div class="seearch"> 
+            <a class="search" type="button"  data-toggle="modal" data-target="#myModal"><img src="https://img.icons8.com/material-outlined/24/ffffff/search.png"/></a>
+            
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Поиск</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="results/" method="get">
+                                <input type="text" class="form-control" placeholder="Search..." name="results"/>
+                                <input type="submit" class="btn btn-primary" value="Искать" style="width: 100%;"/>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="search" href="regis/"><img src="https://img.icons8.com/material-outlined/24/ffffff/user-male-circle.png"/></a>
+            
+            <style type="text/css">
+            .search1{
+                display: inline;
+                text-align: right;
+                text-decoration:none; 
+                color:white;
+                font-family: Arial;
+            }
+            
+            .search1:hover{text-decoration: underline;} 
+            </style>
+            
+            <a class="search1" href="contacti/">О нас</a>
+        </div>
+
+
+<!-------------------- Carousel (bootstrap slide)-------------------------------------->
+    <style type="text/css">
+        .carousel-item{
+            margin-bottom: 2%;
+        }
+    </style>
+
+    <div id="gallery" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="https://s2.vcdn.biz/static/f/3915111161/image.jpg/pt/r0x0x4" alt="Dyuna"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="https://s7.vcdn.biz/static/f/3978613411/image.jpg/pt/r0x0x4" alt="Image 2"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="https://s8.vcdn.biz/static/f/3612022541/image.jpg/pt/r0x0x4" alt="Image 2"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="https://s7.vcdn.biz/static/f/2383757611/image.jpg/pt/r0x0x4" alt="Image 3"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="https://s5.vcdn.biz/static/f/3517321901/image.jpg/pt/r0x0x4">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="https://s6.vcdn.biz/static/f/3537196971/image.jpg/pt/r0x0x4">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="https://s5.vcdn.biz/static/f/3420802931/image.jpg/pt/r0x0x4">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="https://s2.vcdn.biz/static/f/3798245351/image.jpg/pt/r0x0x4">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="https://s9.vcdn.biz/static/f/3665575611/image.jpg/pt/r0x0x4">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="https://s7.vcdn.biz/static/f/3844197151/image.jpg/pt/r0x0x4">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="https://s5.vcdn.biz/static/f/3969981761/image.jpg/pt/r0x0x4" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    
+
+      <a class="carousel-control-prev" href="#gallery" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#gallery" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<!------------------------------------------------------>
+    <style type="text/css">
+    h1{
+        color:grey;
+        font-size:16px;
+        margin-bottom:20px;
+        margin-left:60px;
+        }
+    h2{
+        color:white;
+        font-size:20px;
+        margin-bottom:20px;
+        margin-left:60px;
+    }
+    </style>
+
+    <br>
+    <h2 class="container">Онлайн-кинотеатр akf: фильмы в хорошем качестве всегда приносят настоящее удовольствие</h2>
+    <h1 class="container">Каждый день миллионы людей ищут фильмы онлайн, и никто не хочет усложнять себе жизнь – и вы наверняка один из них! А раз так, то akf – это именно тот ресурс, который вам нужен. От лучших кинолент в HD-качестве вас отделяет буквально один клик. Мы не просто освобождаем от необходимости идти в кинотеатр или изучать программу телепередач – у посетителей нашего ресурса гораздо больше возможностей.</br>
+    Видеотека akfilm – это постоянно пополняющаяся коллекция в рунете, которая насчитывает более 60 тысяч отечественного и зарубежного контента, доступного для просмотра онлайн. Мы первыми в России подписали контракты с крупнейшими голливудскими студиями (Walt Disney, Warner Bros., Sony, 20th Century Fox, Universal, Paramount, MGM и другими) и на постоянной основе сотрудничаем с крупнейшими российскими компаниями и телеканалами.</h1>
+    
+     <div class="container" style="color:white; ">
+        <p style="font-size: 20px">Рекомендуем посмотреть</p>
+        <div class="row">
+        <style type="text/css">
+            figcaption{
+                color: grey;
+            }
+            figcaption:hover{
+                color: white;
+            }
+        </style> 
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/1f.jpg' %}" height="200px"/>
+        <figcaption>Аладдин</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/2f.jpg' %}" height="200px"/>
+         <figcaption>Дора</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/3f.jpg' %}" height="200px"/>
+        <figcaption>Джуманджи</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/4f.jpg' %}" height="200px"/>
+        <figcaption>Джунгли</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/7f.jpg' %}" height="200px"/>
+        <figcaption><a href="https://www.youtube.com/watch?v=2dNjqi7CBsc">21 мост</a></figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/9f.jpg' %}" height="200px"/>
+        <figcaption>Первому игроку пригодиться</figcaption>
+    </figure>
+    </div>
+</div>
+<!----------------------------------------------------------->
+    <div class="container" style="color:white; ">
+    <div class="row">
+        <style>
+            figcaption{
+                font-size: 16px;
+            }
+            a{
+                text-decoration: none;
+                color: gray;
+            }
+            a:hover{
+               color: white; 
+            }
+        </style>
+    <p style="font-size: 20px;">Мультфильмы</p>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/m1.jpg' %}" height="200px"/>
+        <figcaption>Вперед</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/m2.jpg' %}" height="200px"/>
+        <figcaption>Камуфляж и шпионаж</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/m3.jpg' %}" height="200px"/>
+        <figcaption>Красные туфельки</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/m4.jpg' %}" height="200px"/>
+        <figcaption> Следующее поколение</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/m5.jpg' %}" height="200px"/>
+        <figcaption>Эверест</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/a1.jpg' %}" height="200px"/>
+        <figcaption><a href="video/">Город героев</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<!----------------------------------------------------------->
+<div class="container" style="color:white;">
+    <div class="row">
+    <p style="font-size: 20px;">Военные драмы</p>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/v2.jpg' %}" height="200px"/>
+        <figcaption>По соображениям совести</figcaption>
+    </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/v4.jpg' %}" height="200px"/>
+        <figcaption>Т-34</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/v5.jpg' %}" height="200px"/>
+        <figcaption>Калашников</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/v6.jpg' %}" height="200px"/>
+        <figcaption>Ярость</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/v7.jpg' %}" height="200px"/>
+        <figcaption>Айла дочь войны </figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/v8.jpg' %}" height="200px"/>
+        <figcaption>Битва за Севастополь</figcaption>
+    </figure>
+    </div>
+</div>
+
+<!----------------------------------------------------------->
+    <div class="container" style="color:white">
+        <div class="row">
+        <p style="font-size: 20px;">Лучшее семейное кино</p>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/с1.jpg' %}" height="200px"/>
+        <figcaption>Кролик Питер 2</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/с2.jpg' %}" height="200px"/>
+        <figcaption>Чудо</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/а5.jpg' %}" height="200px"/>
+        <figcaption>Мы купили зоопарк</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/а6.jpg' %}" height="200px"/>
+        <figcaption>Дом странных детей</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/а7.jpg' %}" height="200px"/>
+        <figcaption>Дулиттл</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/s1.jpg' %}" height="200px"/>
+        <figcaption>Гарри Поттер</figcaption>
+        </figure>
+    </div>
+    </div>
+    
+    <!----------------------------------------------------------->
+    <div class="container" style="color:white">
+        <div class="row">
+        <p style="font-size: 20px;">На реальных событиях</p>
+    <figure class="col-lg-2 col-sm-3"> 
+        <img src="{%static 'images/н1.jpg' %}" height="200px"/>
+        <figcaption>Лев</figcaption>
+    </figure>
+
+    <figure class="col-lg-2 col-sm-3"> 
+        <img src="{%static 'images/н2.jpg' %}" height="200px"/>
+        <figcaption>Глубоководный горизонт</figcaption>
+    </figure> 
+
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/н3.jpg' %}" height="200px"/>
+        <figcaption>Невозможное</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/н4.jpg' %}" height="200px"/>
+        <figcaption>Хатико</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/н5.jpg' %}" height="200px"/>
+        <figcaption>Игры разума</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/n1.jpg' %}" height="200px"/>
+        <figcaption>Дело храбрых</figcaption>
+        </figure>
+    </div>
+</div>
+
+    <!----------------------------------------------------------->
+    <div class="container" style="color:white; font-size: 20px;">
+        <div class="row">
+        <p style="font-size: 20px;">Marvel</p>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/м1.jpg' %}" height="200px"/>
+        <figcaption>Мстители.Финал</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/м2.jpg' %}" height="200px"/>
+        <figcaption>Капитан Марвел</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/м3.jpg' %}" height="200px"/>
+        <figcaption>Тор Рагнарек</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/м4.jpg' %}" height="200px"/>
+        <figcaption>Доктор Стрейнж</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/м5.jpg' %}" height="200px"/>
+        <figcaption>Первый мститель</figcaption>
+        </figure>
+    <figure class="col-lg-2 col-sm-3">
+        <img src="{%static 'images/м6.jpg' %}" height="200px"/>
+        <figcaption>Человек паук</figcaption>
+        </figure>
+    </div> 
+    </div>   
+
+    <!----------------------- Cards bootstrap ------------------------>
+    <hr style="color:dimgray;">
+        <h1 style="color:white; font-size: 30px; text-align:center;"> ТОП 3</h1>
+        <style type="text/css">
+            :root {
+                --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+            }
+            body {background: #111 !important;}
+            .card {
+                background: #222;
+                border: 1px solid ;
+                color: rgba(250, 250, 250, 0.8);
+                margin-bottom: 2rem;
+                margin-left: 8%;
+            }
+            .card:hover{
+                background: var(--gradient) !important;
+                -webkit-text-fill-color: #fff !important;
+                border: 5px solid #fff !important; 
+                box-shadow: #222 1px 0 10px;
+                text-decoration: underline;
+            }
+        </style>
+        <div class="container mx-auto mt-3">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://s1.vcdn.biz/static/f/3921072931/image.jpg/pt/r300x423x4" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Дюна</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2021, Приключения</h6>
+                            <p class="card-text" style="color:dimgray; font-size: 15px;">8.2 IMDb <br> 8.0 MGG</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://s7.vcdn.biz/static/f/3934120651/image.jpg/pt/r300x423x4" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Не время умирать</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2021, Боевики</h6>
+                            <p class="card-text" style="color:dimgray; font-size: 15px;">7.4 IMDb <br> 7.4 MGG</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://s8.vcdn.biz/static/f/3745224431/image.jpg/pt/r300x423x4" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Веном 2</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2021, Боевики</h6>
+                            <p class="card-text" style="color:dimgray; font-size: 15px;">6.0 IMDb <br> 6.3 MGG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <hr style="color:dimgray;">
+    
+    <!--------------------------------------- Footer --------------------------------------------------------->
+    <div class="container-fluid" id="footer" style="text-align: center; background-color: #363535;">
+        <ul class="social-icons" style="background-color: #363535;">
+            <div style="font-size: 18px; font-family:Arial;background-color: #363535;">Присоединяйтесь</div>
+
+            <li ><a href="http://www.facebook.com"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-circled--v1.png"/></a></li>
+            <li><a href="http://www.twitter.com"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/></a></li>
+            <li><a href="http://www.youtube.com"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube.png"/></a></li>
+            <li><a href="http://www.instagram.com"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-circle.png"/></a></li>
+        </ul>
+        <hr style="color:white;">
+        <div style=" color:white; font-size: 18px; font-family:Arial;">Контакты:
+            <a href="" style="color:white;">+7-747-944-21-28</a>
+            <a href="" style="color:white;">+7-702-845-62-32</a>
+        </div>
+        <hr style="color:white;">
+        <div style="font-size: 18px; font-family: Arial;">
+            <a href="mailto:kamosh20021108@gmail.com" style="color:white;"><div>Задавайте вопросы по электронной почте</div></a>
+        </div>
+    </div>
+  </body>
+</html>
